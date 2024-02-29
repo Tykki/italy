@@ -1,7 +1,6 @@
 body {
     background-color: #b7b74a;
     margin: 0;
-    
 }
 
 header {
@@ -13,7 +12,6 @@ header {
     text-align: center;
     margin: 0;
     padding: .5% 0;
-    
     list-style: none;
 }
 #navbar li {
@@ -43,4 +41,11 @@ footer>p{
 
 #splash-img {
     width: 100%;
+}
+
+.hide{
+    display: none;
+}
+.show {
+    display: initial;
 }
