@@ -49,3 +49,39 @@ footer>p{
 .show {
     display: initial;
 }
+
+.container {
+    margin: auto 10%;
+}
+
+.info-text, .info-picker {
+    width: 45%;
+    display: inline-block;
+    align-content: center;
+}
+.info-picker>li{
+    background-color: black;
+    color: white;
+    list-style: none;
+    margin: 1% auto;
+    text-align: center;
+    padding: 12px;
+    border-radius: 15px;
+}
+.info-text{
+    margin-left: 4%;
+    vertical-align: top;
+}
+.leader-imgs{
+    text-align: center;
+    margin: auto auto 4%;
+}
+.leader-imgs>img {
+    display: inline-block;
+    width: 20%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+.leader-imgs>img:last-child {
+    margin-right: initial;
+}

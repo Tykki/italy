@@ -8,32 +8,26 @@ const hide = () => {
         page.classList.add('hide')
     })
 }
-
+let flag = false
 const hashHandler = (hash) => {
     console.log('step 2', hash)
     if (!hash) {
         return
     }
     hide()
+    flag = false
     // Active Class on navbar if we doing that
     pages.forEach((page) => {
         if (hash === `#${page.id}`) {
             console.log('pass')
             page.classList.remove('hide')
-        } else {
-            // location.hash = ''
-            // location.reload()
+            flag = true
         }
     })
-    //  if (hash === "#event"){
-    //      eventPage.classList.remove('hide')
-    //  } else if (hash === "#artist"){
-    //      artistPage.classList.remove('hide')
-    //  } else if (hash === "#testi"){
-    //      testiPage.classList.remove('hide')
-    //  } else if (hash === "#gallery"){
-    //      galleryPage.classList.remove('hide')
-    //  }
+    // check if a page was set, if not show home page
+    if (!flag){
+        location.hash = '#splash'
+    }
  }
  
  window.addEventListener('hashchange', (e) => hashHandler(e.target.location.hash))
