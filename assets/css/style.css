@@ -85,3 +85,21 @@ footer>p{
 .leader-imgs>img:last-child {
     margin-right: initial;
 }
+.card-wrapper{
+    text-align: center;
+}
+.card {
+    display: inline-block;
+    width: 30%;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 4%;
+    margin-bottom: 10%;
+}
+.card:last-child{
+    margin-right: initial;
+}
+.card>h3{
+    display: flex;
+    justify-content: space-around;
+}
