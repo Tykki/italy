@@ -1,4 +1,4 @@
-import './../css/style.css'
+// import './../css/style.css'
 
 const pages = document.querySelectorAll('main')
 const navLinks = document.querySelectorAll('#navbar a')

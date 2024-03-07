@@ -1,10 +1,15 @@
+:root{
+    --primary: #b7b7a4;
+    --secondary: #676750;
+}
+
 body {
-    background-color: #b7b74a;
+    background-color: var(--primary);
     margin: 0;
 }
 
 header {
-    background-color: #a5a58d;
+    background-color: var(--secondary);
     margin: 0;
 }
 
@@ -28,7 +33,7 @@ main {
 }
 
 footer {
-    background-color: #a5a58d;
+    background-color: var(--secondary);
     color: white;
     text-align: center;
     width: 100%;
@@ -107,4 +112,44 @@ footer>p{
     padding-left: 5%;
     /* text-align: center; */
     width: 90%;
+}
+.artist-wrapper {
+    width: 80%;
+    margin: 5% auto 15%;
+}
+.artist-wrapper:last-child{
+    margin-bottom: 5%;
+}
+.artist-info{
+    margin-bottom: 3%;
+}
+.artist-img, .artist-info>div {
+    display: inline-block;
+}
+.artist-info>div{
+    width: 45%;
+    margin-left: 4%;
+    vertical-align: top;
+}
+.artist-img {
+    width: 45%;
+    border-radius: 20px;
+}
+.artist-painting{
+    width: 25%;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+.artist-painting:last-child{
+    margin-right: 0px;
+}
+.artist-works{
+    background-color: white;
+    padding: 4%;
+    border-radius: 15px;
+    text-align: center;
+}
+.artist-works>h3{
+    text-align: left;
+    margin-top: 0px;
 }
