@@ -86,7 +86,7 @@ footer>p{
     margin-right: initial;
 }
 .card-wrapper{
-    text-align: center;
+    /* text-align: center; */
 }
 .card {
     display: inline-block;
@@ -102,4 +102,9 @@ footer>p{
 .card>h3{
     display: flex;
     justify-content: space-around;
+}
+.card p{
+    padding-left: 5%;
+    /* text-align: center; */
+    width: 90%;
 }
