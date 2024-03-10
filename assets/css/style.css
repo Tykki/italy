@@ -155,7 +155,28 @@ footer>p{
     margin-top: 0px;
 }
 #rec>.container{
-    height: 90vh;
+    height: 140vh;
     margin: 0px;
     overflow: hidden;
+}
+
+.list-wrapper{
+    width: 100%;
+    display: inline-block;
+	align-content: center;
+}
+
+
+.list-col> a li{
+    background-color: black;
+    color: white;
+    list-style: none;
+    margin-right: 5%;
+	margin-bottom: 10%;
+    text-align: center;
+	font-size: 30px;
+    padding: 3%;
+    border-radius: 10px;
+	float: left;
+	width: 20%;
 }
