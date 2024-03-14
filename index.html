@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Italian Renaissances</title>
+    <title>Italian Renaissance</title>
   </head>
   <body>
     <header>
@@ -37,7 +37,7 @@
               <li><a href="#styles">Following Styles</a></li>
               <li><a href="#artists">Artists</a></li>
               <li><a href="#rec">Recreations</a></li>
-              <li><a href="#ai">AI-Art</a></li>
+              <!-- <li><a href="#ai">AI-Art</a></li> -->
               <li><a href="#timeline">Timeline</a></li>
               <li><a href="#connect">Connect</a></li>
             </div>
@@ -79,7 +79,7 @@
           </section>
         </div>
         <div>
-          <h1>Main Leaders In Renaissence</h1>
+          <h1>Main Leaders In Renaissance</h1>
           <section class="leader-imgs">
             <div>
               <img src="./assets/img/pg2-leader3.jpg" alt="">
@@ -130,7 +130,7 @@
     </main>
     <main id="artists" class="hide">
       <section class="container">
-        <h1>Renaissence Inspired Artists</h1>
+        <h1>Renaissance Inspired Artists</h1>
         <div class="artist-wrapper">
           <section class="artist-info">
             <img class="artist-img" src="./assets/img/pg4-art1.jpg" alt="">
@@ -168,7 +168,7 @@
           <section class="artist-info">
             <img class="artist-img" src="./assets/img/pg4-art3.jpg" alt="">
             <div>
-              <h2 class="artist-name">Simone Köcher</h2>
+              <h2 class="artist-name">Simone Kocher</h2>
               <p class="artist-text">Simone Köcher is a German artist creating analog collages. She works with a playful expression, in which abstract and graphic elements face each other colorfully and harmonically.
                 As an artist, her inspiration comes from organic structures as well as contrasts shaped by nature. Using collages as her medium of expression, she translates observations and emotions into an individual abstract language.
                 </p>
@@ -186,7 +186,7 @@
     </main>
     <main id="rec" class="hide">
       <section class="container">
-        <h1>Recreation of Renaissence Art</h1>
+        <h1>Recreation of Renaissance Art</h1>
         <div id="gallery">
           <div class="tile">
             <img src="./assets/img/monalisa7.jpg" />
@@ -219,7 +219,24 @@
 
       </section>
     </main>
-    <main id="ai" class="hide"><h1>AI</h1></main>
+    <main id="ai" class="hide">
+		<h1 id="AI-title">AI Modified Renaissance Art</h1>
+    		<div id="AI-container">
+      			<div id="slides">
+      			 <img src="assets/img/pg6-1.png" alt="slides-1">
+      			 <img style="display: none;" src="assets/img/pg6-2.png" alt="slides-2">
+      			 <img style="display: none;" src="assets/img/pg6-3.png" alt="slides-3">
+             <img style="display: none;" src="assets/img/pg6-4.png" alt="slides-4">
+             <img style="display: none;" src="assets/img/pg6-5.png" alt="slides-5">
+    			</div>
+   			 </div>
+   			 <div class ="slide-container"> 
+             <input type="range" min="1" max="5" value="1" id="slider"/>
+        </div>
+
+   			 </div>
+     
+    </main>
     <main id="timeline" class="hide">
       <div class="container">
 
@@ -337,5 +354,40 @@
     <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script type="module" src="./assets/js/timeline.js"></script>
+    <script>
+   // Get the range input element
+var slider = document.getElementById("slider");
+
+// Get all the images in the slideshow
+var slides = document.querySelectorAll("#slides img");
+
+// Update the slideshow based on the range value
+slider.addEventListener("input", function() {
+    var value = parseInt(slider.value);
+    
+    // Hide all slides
+    slides.forEach(function(slide) {
+        slide.style.display = "none";
+    });
+      // Calculate the step size for distributing images across the extended range
+      var stepSize = Math.floor(slides.length / 50); // Assuming 100 as the extended range
+    
+    // Calculate the index of the slide to display based on the range value
+    var slideIndex = Math.floor((value - 1) * stepSize);
+    
+    // Show the slide corresponding to the range value
+    slides[value - 1].style.display = "block";
+});
+
+$(document).ready(function(){
+  $('#slider').change(function(){
+    var sliderValue = $(this).val(); // Get the value of the slider
+
+    // Calculate the distance to move the slides
+    var distanceToMove = -100 * (sliderValue - 1) + '%';
+
+  });
+});
+    </script>
   </body>
 </html>

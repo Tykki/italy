@@ -41,6 +41,7 @@ a{
     font-size: 4vw;
     top: 10%;
     left: 10%;
+    color: black;
 }
 
 #navbar ul {
@@ -75,6 +76,9 @@ footer {
 footer>p{
     padding-top: 1%;
 }
+p{
+font-family: Zekton;
+}
 
 #splash-img {
     z-index: -1;
@@ -104,6 +108,10 @@ animation-delay: 6s;
 
 .container {
     margin: auto 10%;
+}
+
+#ip1, #ip2, #ip3, #ip4, #ip5 {
+font-family: Zekton;
 }
 
 .info-view p, .info-picker {
@@ -223,6 +231,23 @@ animation-delay: 6s;
  color:#676750;
 }
 
+.artist-name{
+font-family: SpacePower;
+}
+
+section>h3{
+font-family: Zekton;
+}
+
+h2{
+font-family: SpacePower;
+font-size: 25px;
+}
+
+em{
+font-family: Zekton;
+}
+
 .artist-wrapper {
     width: 80%;
     margin: 5% auto 15%;
@@ -263,6 +288,59 @@ animation-delay: 6s;
     text-align: left;
     margin-top: 0px;
 }
+
+
+#AI-title {
+
+padding: 3%;
+font-family: "SpacePower";
+font-size: 50px;
+
+}
+#AI-container{
+position: relative;
+	width: 100%;
+	max-width: 100%;
+}
+
+img{
+	width: 100%;
+	object-fit: cover;
+    background-position: center;
+	transition: transform 0.5s ease-in;
+}
+
+#slides {
+
+	width: 100%;
+	position:relative;
+	overflow: hidden;
+}
+
+#slider-container{
+position: absolute;
+height: 100%;
+width:100px;
+}
+
+#slider {
+-webkit-appearance: none;
+width: 100%;
+height: 15px;
+outline: none;
+border-radius: 50px;
+position: relative;
+
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    background: black;
+    position: relative;
+}
+
 #rec>.container{
     height: 100vh;
     margin: 0px;
