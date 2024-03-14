@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Italian Renaissences</title>
+    <title>Italian Renaissances</title>
   </head>
   <body>
     <header>
       <nav id="navbar">
         <ul>
+          <a href="#splash"><li>Home</li></a>
           <a href="#general"><li>General</li></a>
           <a href="#styles"><li>Following Styles</li></a>
           <a href="#artists"><li>Artists</li></a>
@@ -20,38 +22,77 @@
           <a href="#connect"><li>Connect</li></a>
         </ul>
       </nav>
+      <nav>
+        <div class="navbar">
+          <div class="nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div> 
+            <div class="menu-items">
+              <li><a href="#splash">Home</a></li>
+              <li><a href="#general">General</a></li>
+              <li><a href="#styles">Following Styles</a></li>
+              <li><a href="#artists">Artists</a></li>
+              <li><a href="#rec">Recreations</a></li>
+              <li><a href="#ai">AI-Art</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+              <li><a href="#connect">Connect</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main id="splash" class="">
-      <img id="splash-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Creaci%C3%B3n_de_Ad%C3%A1n.jpg/1599px-Creaci%C3%B3n_de_Ad%C3%A1n.jpg" alt="">
+      <section>
+        <img id="splash-img" src="./assets/img/pg1-landing.png" alt="">
+        <img id="splash-img" src="./assets/img/pg1-animation.png" alt="">
+        <img id="splash-img" src="./assets/img/pg1-animation2.png" alt="">
+        <h1 class="splash-title">Modern Renaissance</h1>
+      </section>
     </main>
     <main id="general" class="hide">
       <section class="container">
         <div>
-          <h1>What is Renaissence?</h1>
+          <h1>What is Renaissance</h1>
           <p>The Renaissance movement was a cultural, artistic, and intellectual revolution that began in Italy during the late 14th century and spread across Europe until the 17th century. It marked a profound shift from the medieval period to the modern era, characterized by a renewed interest in classical learning, humanism, and individualism.</p>
         </div>
         <div>
           <h1>Main Characteristics</h1>
           <section class="info-view">
             <ul class="info-picker">
-              <li>Humanism and Classical Influence</li>
-              <li>Realism and Perspective</li>
-              <li>Individualism and Portraiture</li>
-              <li>Religious and Mythological Themes</li>
+              <li id="ip1">Humanism and Classical Influence</li>
+              <li id="ip2">Realism and Perspective</li>
+              <li id="ip3">Individualism and Portraiture</li>
+              <li id="ip4">Religious and Mythological Themes</li>
             </ul>
-            <p class="info-text">Humanism and Classical Influence: Renaissance artists were deeply influenced by the philosophy of humanism, which emphasized the worth and potential of human beings. They looked to classical texts and ideals from ancient Greece and Rome for inspiration, seeking to revive the spirit of antiquity.
-              Realism and Perspective: One of the defining characteristics of Renaissance art was its commitment to realism. Artists such as Leonardo da Vinci and Michelangelo sought to portray the human form and the natural world with greater accuracy and detail. The use of linear perspective allowed for the creation of three-dimensional space on a two-dimensional surface, enhancing the illusion of depth and realism.
-              Individualism and Portraiture: Renaissance art celebrated the individual and the unique qualities of human personality. Portraiture became increasingly popular, with artists capturing the likeness and character of their subjects in paintings and sculptures. Artists like Titian and Hans Holbein the Younger produced iconic portraits that revealed the inner lives of their sitters.
-              Religious and Mythological Themes: While Renaissance art encompassed a wide range of subjects, religious themes remained prevalent, reflecting the enduring influence of the Catholic Church. Artists depicted scenes from the Bible and classical mythology with newfound emotional depth and complexity, imbuing their works with spiritual significance.
+            <p id="iw1" class="hide"><b>Humanism and Classical Influence:</b> Renaissance artists were deeply influenced by the philosophy of humanism, which emphasized the worth and potential of human beings. They looked to classical texts and ideals from ancient Greece and Rome for inspiration, seeking to revive the spirit of antiquity.</p>
+            <p id="iw2" class="hide">
+              <b>Realism and Perspective:</b> One of the defining characteristics of Renaissance art was its commitment to realism. Artists such as Leonardo da Vinci and Michelangelo sought to portray the human form and the natural world with greater accuracy and detail. The use of linear perspective allowed for the creation of three-dimensional space on a two-dimensional surface, enhancing the illusion of depth and realism.</p>
+              <p id="iw3" class="hide">
+              <b>Individualism and Portraiture:</b> Renaissance art celebrated the individual and the unique qualities of human personality. Portraiture became increasingly popular, with artists capturing the likeness and character of their subjects in paintings and sculptures. Artists like Titian and Hans Holbein the Younger produced iconic portraits that revealed the inner lives of their sitters.</p>
+              <p id="iw4" class="hide">
+              <b>Religious and Mythological Themes:</b> While Renaissance art encompassed a wide range of subjects, religious themes remained prevalent, reflecting the enduring influence of the Catholic Church. Artists depicted scenes from the Bible and classical mythology with newfound emotional depth and complexity, imbuing their works with spiritual significance.
               </p>
           </section>
         </div>
         <div>
-          <h2>Main Leaders In Renaissence</h2>
+          <h1>Main Leaders In Renaissence</h1>
           <section class="leader-imgs">
-            <img src="./assets/img/pg2-leader3.jpg" alt="">
-            <img src="./assets/img/pg2-leader1.jpg" alt="">
-            <img src="./assets/img/pg2-leader2.jpg" alt="">
+            <div>
+              <img src="./assets/img/pg2-leader3.jpg" alt="">
+              <p class="leader-text">Leonardo Da Vinci</p>
+            </div>
+            <div>
+              <img src="./assets/img/pg2-leader1.jpg" alt="">
+              <p class="leader-text">Raffaello Sanzio</p>
+            </div>
+            <div>
+              <img src="./assets/img/pg2-leader2.jpg" alt="">
+              <p class="leader-text">Michelangelo</p>
+            </div>
           </section>
         </div>
       </section>  
@@ -62,7 +103,8 @@
         <h1>Styles</h1>
         <div class="card-wrapper">
           <section class="card">
-            <h3>Baroque<span>icon</span></h3>
+            <h3>Baroque<i class="fa fa-share-square-o" aria-hidden="true"></i>
+            </h3>
             <p>
               Naturalism and Emotion: Baroque artists, inspired by the Renaissance emphasis on realism, continued to explore the portrayal of human emotion and naturalistic details. They built upon the Renaissance technique of chiaroscuro to create dramatic contrasts of light and shadow, evoking intense emotions.
             </p>
@@ -71,13 +113,13 @@
             </p>
           </section>
           <section class="card">
-            <h3>Rococo<span>icon</span></h3>
+            <h3>Rococo<i class="fa fa-share-square-o" aria-hidden="true"></i></h3>
             <p>Elegance and Ornamentation: Rococo artists retained the Renaissance interest in beauty and elegance but took it to new heights with their love of ornamentation and decorative flourishes. They borrowed from the Renaissance emphasis on visual pleasure but infused it with a sense of lightness and frivolity.</p>
             <p>Pastoral and Romantic Themes: While Renaissance art often depicted grand historical or religious narratives, Rococo art favored lighter subjects such as pastoral scenes, romantic encounters, and scenes of leisure. This shift reflected a departure from the seriousness of Renaissance themes to a more lighthearted and whimsical approach.</p>
             <p>Portraiture and Individualism: Renaissance portraiture celebrated the individual, and Rococo artists continued this tradition by portraying their subjects with grace and charm. However, Rococo portraits often emphasized the sitter's social status and lifestyle, reflecting the era's fascination with aristocratic life.</p>
           </section>
           <section class="card">
-            <h3>Neoclassicism<span>icon</span></h3>
+            <h3>Neoclassicism<i class="fa fa-share-square-o" aria-hidden="true"></i></h3>
             <p>Return to Classical Ideals: Neoclassical artists looked back to the ideals of ancient Greece and Rome, which were central to the Renaissance's revival of classical learning. They embraced the rationalism and order of classical art, rejecting the emotionalism of the Baroque and the frivolity of the Rococo.</p>
             <p>Clarity and Simplicity: Neoclassical art emphasized clarity, simplicity, and restraint, qualities that were influenced by the rationalism of Renaissance art. Neoclassical artists sought to achieve a sense of harmony and balance in their compositions, echoing the classical principles of beauty and proportion.</p>
             <p>Historical and Mythological Subjects: Like Renaissance and Baroque artists, Neoclassical artists often depicted historical and mythological subjects. However, they approached these themes with a sense of moral seriousness and didacticism, seeking to inspire virtue and patriotism through their art.</p>
@@ -95,7 +137,7 @@
             <div>
               <h2 class="artist-name">Oscar Nin</h2>
               <p class="artist-text">Modern Spanish artist. His early passion for drawing evolved into a fervent love for painting, gaining recognition in the 2010s, notably through Saatchi Art. Renowned for his dynamic style, Oscar masterfully blends vibrant and somber tones to evoke deep emotions. With a keen interest in human psychology, he infuses his reinterpretations of classics with introspective depth, continually pushing creative boundaries to connect meaningfully with viewers.</p>
-              <a class="artist-link" href=""><i>icon</i> https://www.oscarnin.com/</a>
+              <a class="artist-link" href="https://www.oscarnin.com/" target="_blank"><i class="fa fa-at" aria-hidden="true"></i> https://www.oscarnin.com/</a>
             </div>
           </section>
           <section class="artist-works">
@@ -112,7 +154,7 @@
               <h2 class="artist-name">Tomoya Nakano</h2>
               <p class="artist-text">Tomoya Nakano, a contemporary artist who has lived in Toronto, Canada, and New York, draws inspiration from diverse cultures and mediums such as artwork, photography, and music. Now based in Japan, with studios in Tokyo and Yokohama, Nakano's portfolio includes series like Abstract Portrait, Animal, Landscape, and Mixed Media, all accessible on their collection page. Nakano's paintings have been sought after by private collectors internationally, with works gracing collections in over 25 countries and 40 places, demonstrating the widespread appeal and global reach of their art.
               </p>
-              <a class="artist-link" href=""><i>icon</i> https://www.saatchiart.com/tomoya</a>
+              <a class="artist-link" href="https://www.saatchiart.com/tomoya" target="_blank"><i class="fa fa-at" aria-hidden="true"></i> https://www.saatchiart.com/tomoya</a>
             </div>
           </section>
           <section class="artist-works">
@@ -130,7 +172,7 @@
               <p class="artist-text">Simone Köcher is a German artist creating analog collages. She works with a playful expression, in which abstract and graphic elements face each other colorfully and harmonically.
                 As an artist, her inspiration comes from organic structures as well as contrasts shaped by nature. Using collages as her medium of expression, she translates observations and emotions into an individual abstract language.
                 </p>
-              <a class="artist-link" href=""><i>icon</i> https://www.saatchiart.com/boardergirl</a>
+              <a class="artist-link" href="https://www.saatchiart.com/boardergi" target="_blank"><i class="fa fa-at" aria-hidden="true"></i> https://www.saatchiart.com/boardergirl</a>
             </div>
           </section>
           <section class="artist-works">
@@ -178,7 +220,93 @@
       </section>
     </main>
     <main id="ai" class="hide"><h1>AI</h1></main>
-    <main id="timeline" class="hide"><h1>Timeline</h1></main>
+    <main id="timeline" class="hide">
+      <div class="container">
+
+      <h1>Timeline</h1>
+      <section class="cd-horizontal-timeline">
+        <div class="timeline">
+          <div class="events-wrapper">
+            <div class="events">
+              <ol>
+                <li><a href="#0" data-date="01/01/1500" class="selected">1503</a></li>
+                <li><a href="#0" data-date="01/01/1510">1650</a></li>
+                <li><a href="#0" data-date="01/01/1525">1730</a></li>
+                <li><a href="#0" data-date="01/01/1530">1750</a></li>
+                <li><a href="#0" data-date="01/01/1600">2009</a></li>
+                <li><a href="#0" data-date="01/01/1650">2010</a></li>
+                <li><a href="#0" data-date="01/01/1660">2019</a></li>
+              </ol>
+      
+              <span class="filling-line" aria-hidden="true"></span>
+            </div> <!-- .events -->
+          </div> <!-- .events-wrapper -->
+            
+          <ul class="cd-timeline-navigation">
+            <li><a href="#0" class="prev inactive">Prev</a></li>
+            <li><a href="#0" class="next">Next</a></li>
+          </ul> <!-- .cd-timeline-navigation -->
+        </div> <!-- .timeline -->
+      
+        <div class="events-content">
+          <ol>
+            <li class="selected" data-date="01/01/1500">
+              <h2>First interpretation of Mona Lisa</h2>
+              <em>1503</em>
+              <img src="./assets/img/timeline-1503.jpg" alt="">
+              <p>	
+                Prado Mona Lisa by the student of Leonardo Da Vinci
+              </p>
+            </li>
+      
+            <li data-date="01/01/1510">
+              <h2>End of Renaissance</h2>
+              <em>1650</em>
+            </li>
+      
+            <li data-date="01/01/1525">
+              <h2>Start of Rococo</h2>
+              <em>1730</em>
+            </li>
+      
+            <li data-date="01/01/1530">
+              <h2>Start of Neoclassicism</h2>
+              <em>1750</em>
+            </li>
+      
+            <li data-date="01/01/1600">
+              <h2>Interpretation of the Birth of Venus</h2>
+              <em>2009</em>
+              <img src="./assets/img/timeline-2009.jpg" alt="">
+              <p>	
+                Prado Mona Lisa by the student of Leonardo Da Vinci
+              </p>
+            </li>
+      
+            <li data-date="01/01/1650">
+              <h2>AI and Images</h2>
+              <em>2010</em>
+              <p>	
+                AI focuses on image recognition, generation, and understanding.
+              </p>
+            </li>
+      
+            <li data-date="01/01/1660">
+              <h2>Interpretation#2 of the Birth of The Venus</h2>
+              <em>2019</em>
+              <img src="./assets/img/timeline-2019.jpg" alt="">
+              <p>	
+                "The Birth of Venus" by  MK Anisko
+              </p>
+            </li>
+      
+            
+          </ol>
+        </div> <!-- .events-content -->
+      </section>
+      </div>
+        
+    </main>
 
     <main id="connect" class="hide">
       <section class="container">
@@ -199,16 +327,15 @@
         </div>
         
       </section>
-        
-      
-      
-      
       </main>
 
     <footer>
       <p>Copyright &copy; 2024 Group 1. All Rights Reserved.</p>
 <!-- <p>Developed | Designed | Managed by Tykki | Daria | Kirstin? &copy; 2024</p> -->
     </footer>
-    <script type="module" src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="./assets/js/timeline.js"></script>
   </body>
 </html>
